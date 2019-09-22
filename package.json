@@ -1,0 +1,30 @@
+{
+  "name": "firstproject",
+  "version": "1.0.0",
+  "description": "my blogs are here",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prasanta-Adak/myblog.git"
+  },
+  "author": "Prasanta Adak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Prasanta-Adak/myblog/issues"
+  },
+  "homepage": "https://github.com/Prasanta-Adak/myblog#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie": "^0.4.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "formidable": "^1.2.1",
+    "fs": "0.0.1-security",
+    "mysql": "^2.17.1"
+  }
+}

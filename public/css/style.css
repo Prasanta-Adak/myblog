@@ -1,0 +1,44 @@
+body
+        {
+            background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(http://127.0.0.1:3050/images/a.jpeg);
+            color:white;
+            
+        }
+    #maincontainer
+    {
+        border:1px solid red;
+        width:30%;
+        margin-left: 350px;
+        margin-top: 20px;
+    }
+    input[type=text],[type=password]{
+	/* float:left; */
+	width:88%;
+	height:40px;
+	background-color:white;
+	border:1px solid #0d0d0d;
+	padding:10px;
+	box-sizing:border-box;
+    margin: 10px;
+	}
+    input[type=reset]
+    {
+        margin-left: 210px;
+        margin-top: -25px;
+        font-size: 20px;
+        background: red;
+        color:white;
+        border:none;
+    }
+    input[type=submit]
+    {
+        margin-left: 10px;
+        font-size: 20px;
+        background:#4CAF50;
+        color: white;
+        border:none;
+    }
+    #sign{
+        margin-left: 40%;
+    }
+    
