@@ -8,13 +8,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+    
     <div id="top">
-    
-    
-    <div id="pic">
+
+<!-- start profile pic coding -->
+
+        
+<form action="/upload_photo" method="POST" enctype="multipart/form-data">
+    <input type="file" name="profilePic" placeholder="choose profile pic" class="form-control" style="float: right; margin: 10px 0px 0px 2px;">
+    <button class="btn btn-success" type="submit" style="float:right; margin: 10px 0px 0px 2px;">Upload</button>
+</form>
+
+<!-- end profile pic coding -->
+
+
+    <a href="/addblog"><button style="margin: 10px 3px 0px 5px;">ADD BLOG</button></a>
+    <button>LOGOUT</button>
+    <div id="pic" style="background-image: url('http://127.0.0.1:3050/profilePic/<%= userData.photoname %>');">
     <!-- <img src="images/b.jpeg" alt="profilepic"> -->
    </div>
-   <h1 style="text-align: center; color: aqua;">HI PRASANTA</h1>
+   <h1 style="text-align: center; color: aqua;">Hi <%= userData.fname %></h1>
    <p style="color:white; text-align: center;">
         A study conducted involving web engineering practice revealed that web application <br> 
         development has several characteristics that have to be addressed and these include: <br>
@@ -43,48 +57,8 @@
 </div>
 
 </div>
-<div style="margin-bottom: 0px;">
-    <article style="text-align: center;">
-        <h2>First Blog</h2>
-        <div id="blog">
-            <p>
-                A study conducted involving web engineering practice revealed that web application development has several characteristics <br> 
-                 that have to be addressed and these include: short development life-cycle times; different business models; multi-disciplinary <br>
-                
-                development teams; small development teams working on similar tasks; business analysis and evaluation with end-users; explicit <br> 
-                requirement and rigorous training against requirements; A study conducted involving web engineering practice revealed that web application <br>
-                A study conducted involving web engineering practice revealed that web application development has several characteristics <br> 
-                that have to be addressed and these include: short development life-cycle times; different business models; multi-disciplinary <br>
-               
-               development teams; small development teams working on similar tasks; business analysis and evaluation with end-users; explicit <br> 
-               requirement and rigorous training against requirements; A study conducted involving web engineering practice revealed that web application <br>
-                
-            </p>
-            <button style="font-size: 30px;color:white; margin:5px; background:rgb(145, 122, 122); border:none;">Read More >></button>
-        </div>
-    </article>
-
-    <article style="text-align: center;">
-            <h2>Second Blog</h2>
-            <div id="blog">
-                    <p>
-                            A study conducted involving web engineering practice revealed that web application development has several characteristics <br> 
-                             that have to be addressed and these include: short development life-cycle times; different business models; multi-disciplinary <br>
-                            
-                            development teams; small development teams working on similar tasks; business analysis and evaluation with end-users; explicit <br> 
-                            requirement and rigorous training against requirements; A study conducted involving web engineering practice revealed that web application <br>
-                            A study conducted involving web engineering practice revealed that web application development has several characteristics <br> 
-                            that have to be addressed and these include: short development life-cycle times; different business models; multi-disciplinary <br>
-                           
-                           development teams; small development teams working on similar tasks; business analysis and evaluation with end-users; explicit <br> 
-                           requirement and rigorous training against requirements; A study conducted involving web engineering practice revealed that web application <br>
-                            
-                        </p>
-                        <button style="font-size: 30px;color:white; margin:5px; background:rgb(145, 122, 122); border:none;">Read More >></button>
-            </div>
-        </article>
-
-        <article style="text-align: center;">
+<div>
+        <article>
                 <h2>Third Blog</h2>
                 <div id="blog">
                         <p>
@@ -104,7 +78,47 @@
                 </div>
             </article>
 
-            <article style="text-align: center;">
+    <article>
+            <h2>Second Blog</h2>
+            <div id="blog">
+                    <p>
+                            A study conducted involving web engineering practice revealed that web application development has several characteristics <br> 
+                             that have to be addressed and these include: short development life-cycle times; different business models; multi-disciplinary <br>
+                            
+                            development teams; small development teams working on similar tasks; business analysis and evaluation with end-users; explicit <br> 
+                            requirement and rigorous training against requirements; A study conducted involving web engineering practice revealed that web application <br>
+                            A study conducted involving web engineering practice revealed that web application development has several characteristics <br> 
+                            that have to be addressed and these include: short development life-cycle times; different business models; multi-disciplinary <br>
+                           
+                           development teams; small development teams working on similar tasks; business analysis and evaluation with end-users; explicit <br> 
+                           requirement and rigorous training against requirements; A study conducted involving web engineering practice revealed that web application <br>
+                            
+                        </p>
+                        <button style="font-size: 30px;color:white; margin:5px; background:rgb(145, 122, 122); border:none;">Read More >></button>
+            </div>
+        </article>
+
+        <article>
+                <h2>Third Blog</h2>
+                <div id="blog">
+                        <p>
+                                A study conducted involving web engineering practice revealed that web application development has several characteristics <br> 
+                                 that have to be addressed and these include: short development life-cycle times; different business models; multi-disciplinary <br>
+                                
+                                development teams; small development teams working on similar tasks; business analysis and evaluation with end-users; explicit <br> 
+                                requirement and rigorous training against requirements; A study conducted involving web engineering practice revealed that web application <br>
+                                A study conducted involving web engineering practice revealed that web application development has several characteristics <br> 
+                                that have to be addressed and these include: short development life-cycle times; different business models; multi-disciplinary <br>
+                               
+                               development teams; small development teams working on similar tasks; business analysis and evaluation with end-users; explicit <br> 
+                               requirement and rigorous training against requirements; A study conducted involving web engineering practice revealed that web application <br>
+                                
+                            </p>
+                            <button style="font-size: 30px;color:white; margin:5px; background:rgb(145, 122, 122); border:none;">Read More >></button>
+                </div>
+            </article>
+
+            <article>
                     <h2>Forth Blog</h2>
                     <div id="blog">
                             <p>
@@ -123,6 +137,18 @@
                                 <button style="font-size: 30px;color:white; margin:5px; background:rgb(145, 122, 122); border:none;">Read More >></button>
                     </div>
                 </article>
+
+
+               <h1 style="text-align: center;">YOUR BLOG</h1>
+                <article>
+                        <h2><%= userData.blogTitle %></h2>
+                        <div id="blog">
+                            <p>
+                                    <%= userData.blog %>
+                                
+                            </p>
+                        </div>
+                    </article>
 </div>
 
 <div id="about_section">
@@ -189,5 +215,8 @@
 
 </div>
 
+
+
+<script src="../js/script.js"></script>
 </body>
 </html>

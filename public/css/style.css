@@ -4,6 +4,16 @@ body
             color:white;
             
         }
+        #login
+        {
+            float: right;
+        }
+        #login:hover{
+            cursor: pointer;
+            background:red;
+            border:none;
+            font-size: 20px;
+        }
     #maincontainer
     {
         border:1px solid red;
@@ -11,7 +21,11 @@ body
         margin-left: 350px;
         margin-top: 20px;
     }
-    input[type=text],[type=password]{
+
+    /* start profile pic coding */
+   
+    /* end profile pic coding */
+    input[type=text],[type=password],[type=email]{
 	/* float:left; */
 	width:88%;
 	height:40px;
@@ -35,10 +49,9 @@ body
         margin-left: 10px;
         font-size: 20px;
         background:#4CAF50;
-        color: white;
+        color:white;
         border:none;
     }
     #sign{
         margin-left: 40%;
     }
-    

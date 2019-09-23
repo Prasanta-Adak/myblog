@@ -4,29 +4,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SIGNUP</title>
-	<link rel="stylesheet" href="http://127.0.0.1:3050/css/style.css">
+    <link rel="stylesheet" href="http://127.0.0.1:3050/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+        <a href="/login"><button id="login">LogIn</button></a> 
     <div id="maincontainer">
-    <!-- <fieldset style="width: 50%;"> -->
+      
+        
+    
     <h2 id="sign">SIGNUP</h2>
     <form action="/register_successful" method="POST" id="register-form">
         First Name : <br>
-    <input type="text" name="fname" id="fname" placeholder="enter your first name"><br>
+    <input type="text" name="fname" id="fname" placeholder="enter your first name" required="required"><br>
     Last Name : <br>
-    <input type="text" name="lname" id="lname" placeholder="enter your last name"><br>
+    <input type="text" name="lname" id="lname" placeholder="enter your last name" required="required"><br>
     Gender : <br>
     <input type="radio" name="gender" id="gender" value="male">Male
     <input type="radio" name="gender" id="gender" value="female">feMale
     <input type="radio" name="gender" id="gender" value="other">Other
    <br> User Name : <br>
-    <input type="text" name="username" id="username" placeholder="enter your user name"><br>
+    <input type="email" name="username" id="username" placeholder="enter your user email" required="required"><br>
     Password : <br>
-<input type="password" name="password" id="password" placeholder="create your password"><br>
+<input type="password" name="password" id="password" placeholder="create your password" required="required"><br>
 <input type="submit" value="submit">
 <input type="reset">
 </form>
 <!-- </fieldset> -->
 </div>
+<!-- <script src="http://127.0.0.1:3050/js/script.js"></script> -->
 </body>
 </html>
